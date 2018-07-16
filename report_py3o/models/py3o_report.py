@@ -7,6 +7,7 @@ from base64 import b64decode
 from cStringIO import StringIO
 import logging
 import os
+import cgi
 from contextlib import closing
 import subprocess
 
@@ -64,8 +65,7 @@ def py3o_report_extender(report_xml_id=None):
 
 def format_multiline_value(value):
     if value:
-        return Markup(value.replace('<', '&lt;').replace('>', '&gt;').
-                      replace('\n', '<text:line-break/>').
+        return Markup(cgi.escape(value).replace('\n', '<text:line-break/>').
                       replace('\t', '<text:s/><text:s/><text:s/><text:s/>'))
     return ""
 
@@ -175,7 +175,7 @@ class Py3oReport(models.TransientModel):
         """
         self.ensure_one()
         report_xml = self.ir_actions_report_xml_id
-        if report_xml.py3o_template_id and report_xml.py3o_template_id.id:
+        if report_xml.py3o_template_id.py3o_template_data:
             # if a user gave a report template
             tmpl_data = b64decode(
                 report_xml.py3o_template_id.py3o_template_data
@@ -252,6 +252,9 @@ class Py3oReport(models.TransientModel):
             template.render(localcontext)
             out_stream.seek(0)
             tmpl_data = out_stream.read()
+
+        if self.env.context.get('report_py3o_skip_conversion'):
+            return result_path
 
         result_path = self._convert_single_report(
             result_path, model_instance, data

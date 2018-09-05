@@ -1,20 +1,21 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * bi_view_editor
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: reporting-engine (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-07 05:41+0000\n"
+"POT-Creation-Date: 2017-07-09 15:55+0000\n"
 "PO-Revision-Date: 2016-03-21 15:33+0000\n"
 "Last-Translator: <>\n"
-"Language-Team: Danish (http://www.transifex.com/oca/OCA-reporting-engine-8-0/language/da/)\n"
+"Language-Team: Danish (http://www.transifex.com/oca/OCA-reporting-engine-8-0/"
+"language/da/)\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: bi_view_editor
@@ -92,7 +93,7 @@ msgstr "Vist navn"
 #. module: bi_view_editor
 #: selection:bve.view,state:0
 msgid "Draft"
-msgstr ""
+msgstr "Udkast"
 
 #. module: bi_view_editor
 #: code:addons/bi_view_editor/models/bve_view.py:72
@@ -174,7 +175,7 @@ msgstr "Sikkerhed"
 #. module: bi_view_editor
 #: field:bve.view,state:0
 msgid "State"
-msgstr ""
+msgstr "Delstat"
 
 #. module: bi_view_editor
 #: help:bve.view,data:0

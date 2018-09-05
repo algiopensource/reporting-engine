@@ -1,21 +1,23 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * bi_view_editor
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: reporting-engine (8.0)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-07 05:41+0000\n"
+"POT-Creation-Date: 2017-08-19 07:59+0000\n"
 "PO-Revision-Date: 2016-03-21 15:33+0000\n"
 "Last-Translator: <>\n"
-"Language-Team: Arabic (http://www.transifex.com/oca/OCA-reporting-engine-8-0/language/ar/)\n"
+"Language-Team: Arabic (http://www.transifex.com/oca/OCA-reporting-engine-8-0/"
+"language/ar/)\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: ar\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #. module: bi_view_editor
 #: model:ir.actions.act_window,help:bi_view_editor.action_bi_view_editor_view_form
@@ -92,7 +94,7 @@ msgstr "اسم العرض"
 #. module: bi_view_editor
 #: selection:bve.view,state:0
 msgid "Draft"
-msgstr ""
+msgstr "مسوّدة"
 
 #. module: bi_view_editor
 #: code:addons/bi_view_editor/models/bve_view.py:72
@@ -149,7 +151,7 @@ msgstr "الاسم"
 #: view:bve.view:bi_view_editor.view_bi_view_editor_view_form
 #: field:bve.view,note:0
 msgid "Notes"
-msgstr ""
+msgstr "الملاحظات"
 
 #. module: bi_view_editor
 #: view:bve.view:bi_view_editor.view_bi_view_editor_view_form
